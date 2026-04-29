@@ -8,8 +8,8 @@
   "scripts": {
     "test": "jest",
     "format": "prettier --single-quote --no-semi --write **/*.js",
-    "install": "node bin/install.js",
-    "uninstall": "node bin/uninstall.js"
+    "install": "bun run bin/install.js",
+    "uninstall": "bun run bin/uninstall.js"
   },
   "repository": {
     "type": "git",
