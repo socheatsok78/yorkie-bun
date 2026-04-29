@@ -83,7 +83,13 @@ function installFrom(depDir) {
         .map(function(hookName) {
           return {
             hookName: hookName,
-            action: createHook(depDir, projectDir, hooksDir, hookName, runnerPath)
+            action: createHook(
+              depDir,
+              projectDir,
+              hooksDir,
+              hookName,
+              runnerPath
+            )
           }
         })
         .forEach(function(item) {

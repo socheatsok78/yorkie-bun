@@ -1,8 +1,10 @@
-# yorkie
+# yorkie-bun
 
-> Git hooks made easy
+> Git hooks made easy for bun
 
-This is a fork of [husky](https://github.com/typicode/husky) with a few changes:
+This is a fork of [yorkie](https://github.com/yyx990803/yorkie) with a few changes:
+
+- Designed to work with `bun` instead of `nodejs`.
 
 - Prioritizes `package.json` located next to `.git` directory, instead of hard-coded upward search. This avoids the problem when a root package in a lerna monorepo and a sub package both depends on husky, it gets confused and double-updates the root git hooks with wrong paths.
 
@@ -13,7 +15,7 @@ This is a fork of [husky](https://github.com/typicode/husky) with a few changes:
   ``` json
   {
     "scripts": {
-      "precommit": "foo"
+      "precommit": "bunx --bun foo"
     }
   }
   ```
@@ -23,7 +25,7 @@ This is a fork of [husky](https://github.com/typicode/husky) with a few changes:
   ``` json
   {
     "gitHooks": {
-      "pre-commit": "foo"
+      "pre-commit": "bunx --bun foo"
     }
   }
   ```
