@@ -1,7 +1,7 @@
 {
-  "name": "yorkie",
+  "name": "yorkie-bun",
   "version": "2.0.0",
-  "description": "githooks management forked from husky",
+  "description": "githooks management forked from husky for bun",
   "engines": {
     "node": ">=4"
   },
